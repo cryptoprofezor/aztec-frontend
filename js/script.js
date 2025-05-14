@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const uniqueWalletsEl = document.getElementById('unique-wallets');
 
     const startCommandEl = document.getElementById('start-command');
+    const logoutBtn = document.getElementById('logout-btn');
 
     let nodes = [];
     let filteredNodes = [];
@@ -44,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
     loadNodes();
     loadStats();
 
+    // Check if user is logged in
+    if (!localStorage.getItem('token')) {
+        window.location.href = '/login.html';
+    }
+
     // Event Listeners
     nodeForm.addEventListener('submit', handleSubmit);
     searchInput.addEventListener('input', filterNodes);
@@ -53,6 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
     cancelEditBtn.addEventListener('click', () => editModal.classList.add('hidden'));
     saveEditBtn.addEventListener('click', saveEdit);
     deleteNodeBtn.addEventListener('click', deleteNode);
+
+    // Logout Handler
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('token');
+        showNotification('Logged out successfully', 'success');
+        setTimeout(() => window.location.href = '/login.html', 1000);
+    });
 
     // Dynamically update Start Command when form inputs change
     ['node-name', 'ethereum-rpc', 'beacon-rpc', 'private-key', 'wallet-address', 'vps-ip'].forEach(id => {
