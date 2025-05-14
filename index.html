@@ -163,14 +163,14 @@
 
     <!-- View Node Modal -->
     <div id="view-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full">
+        <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full flex flex-col max-h-[90vh]">
             <div class="flex justify-between items-center border-b border-gray-700 px-6 py-4">
                 <h3 class="text-xl font-semibold" id="view-node-name">Node Details</h3>
                 <button id="view-modal-close" class="text-gray-400 hover:text-white">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="p-6 space-y-4">
+            <div class="p-6 space-y-4 overflow-y-auto flex-grow">
                 <div>
                     <label class="block text-sm font-medium text-gray-400 mb-2">Ethereum Sepolia RPC</label>
                     <div class="bg-gray-700 rounded-lg px-4 py-2 font-mono text-sm view-modal-content break-all" id="view-ethereum-rpc"></div>
@@ -230,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3">
+            <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3 shrink-0">
                 <button id="copy-start-command" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2">
                     <i class="fas fa-copy"></i>
                     <span>Copy Start Command</span>
@@ -244,14 +244,14 @@
 
     <!-- Edit Node Modal -->
     <div id="edit-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full">
+        <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full flex flex-col max-h-[90vh]">
             <div class="flex justify-between items-center border-b border-gray-700 px-6 py-4">
                 <h3 class="text-xl font-semibold">Edit Node</h3>
                 <button id="edit-modal-close" class="text-gray-400 hover:text-white">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <form id="edit-form" class="p-6 space-y-4">
+            <form id="edit-form" class="p-6 space-y-4 overflow-y-auto flex-grow">
                 <input type="hidden" id="edit-id">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -325,7 +325,7 @@
                     </div>
                 </div>
             </form>
-            <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3">
+            <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3 shrink-0">
                 <button id="cancel-edit" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
                     Cancel
                 </button>
