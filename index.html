@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,40 +67,40 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="node-name" class="block text-sm font-medium text-gray-400 mb-2">Node Name</label>
-                        <input type="text" id="node-name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        <input type="text" id="node-name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
                     </div>
                     <div>
                         <label for="ethereum-rpc" class="block text-sm font-medium text-gray-400 mb-2">Ethereum Sepolia RPC</label>
-                        <input type="text" id="ethereum-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="ethereum-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="beacon-rpc" class="block text-sm font-medium text-gray-400 mb-2">Beacon Sepolia RPC</label>
-                        <input type="text" id="beacon-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="beacon-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="private-key" class="block text-sm font-medium text-gray-400 mb-2">Private Key (0x...)</label>
                         <div class="relative">
-                            <input type="password" id="private-key" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 blur-sm">
-                            <button type="button" class="absolute right-2 top-2 text-gray-400 hover:text-white" id="toggle-private-key">
+                            <input type="password" id="private-key" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 blur-sm">
+                            <button type="button" class="absolute right-2 top-3 text-gray-400 hover:text-white" id="toggle-private-key">
                                 <i class="fas fa-eye"></i>
                             </button>
                         </div>
                     </div>
                     <div>
                         <label for="wallet-address" class="block text-sm font-medium text-gray-400 mb-2">Wallet Address</label>
-                        <input type="text" id="wallet-address" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="wallet-address" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="vps-ip" class="block text-sm font-medium text-gray-400 mb-2">VPS IP</label>
-                        <input type="text" id="vps-ip" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="vps-ip" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="block-number" class="block text-sm font-medium text-gray-400 mb-2">Proven Block Number</label>
-                        <input type="text" id="block-number" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="block-number" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div class="md:col-span-2">
                         <label for="proof-string" class="block text-sm font-medium text-gray-400 mb-2">Base64 Proof String</label>
-                        <textarea id="proof-string" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        <textarea id="proof-string" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                     </div>
                 </div>
                 <div class="flex space-x-4 pt-4">
@@ -120,7 +121,7 @@
                     <i class="fas fa-terminal text-blue-500"></i>
                     <h2 class="text-xl font-semibold">Start Command</h2>
                 </div>
-                <textarea id="start-command" rows="6" readonly class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 font-mono text-sm text-gray-300"></textarea>
+                <textarea id="start-command" rows="6" readonly class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 font-mono text-sm text-gray-300"></textarea>
             </div>
         </div>
 
@@ -134,7 +135,7 @@
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <i class="fas fa-search text-gray-500"></i>
                 </div>
-                <input type="text" id="search-nodes" class="w-full bg-gray-700 border border-gray-600 rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Search nodes...">
+                <input type="text" id="search-nodes" class="w-full bg-gray-700 border border-gray-600 rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Search nodes...">
             </div>
             <div class="overflow-x-auto rounded-lg shadow">
                 <table class="min-w-full divide-y divide-gray-700">
@@ -162,95 +163,95 @@
     </main>
 
     <!-- View Node Modal -->
-<div id="view-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-    <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full flex flex-col max-h-[90vh]">
-        <div class="flex justify-between items-center border-b border-gray-700 px-6 py-4">
-            <h3 class="text-xl font-semibold" id="view-node-name">Node Details</h3>
-            <button id="view-modal-close" class="text-gray-400 hover:text-white">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="p-6 py-8 overflow-y-auto flex-grow">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Node Name</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-node-name-content"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Ethereum Sepolia RPC</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-ethereum-rpc"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Beacon Sepolia RPC</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-beacon-rpc"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Private Key (0x...)</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content relative">
-                        <span id="view-private-key" class="blur-sm"></span>
-                        <button type="button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white toggle-view-private-key">
-                            <i class="fas fa-eye"></i>
-                        </button>
+    <div id="view-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full flex flex-col max-h-[90vh]">
+            <div class="flex justify-between items-center border-b border-gray-700 px-6 py-4">
+                <h3 class="text-xl font-semibold" id="view-node-name">Node Details</h3>
+                <button id="view-modal-close" class="text-gray-400 hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 py-8 overflow-y-auto flex-grow">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Node Name</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-node-name-content"></div>
                     </div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Wallet Address</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-wallet-address"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">VPS IP</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-vps-ip"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Proven Block Number</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-block-number"></div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Status</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-10 flex items-center font-mono text-xs view-modal-content break-all" id="view-status"></div>
-                </div>
-                <div class="md:col-span-2">
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Base64 Proof String</label>
-                    <div class="bg-gray-700 rounded-lg px-4 py-2 h-32 overflow-y-auto font-mono text-xs view-modal-content break-all" id="view-proof-string"></div>
-                </div>
-                <!-- Start Command Section with Edit Option -->
-                <div class="md:col-span-2">
-                    <div class="flex justify-between items-center mb-2">
-                        <label class="block text-sm font-medium text-gray-400">Start Command</label>
-                        <button id="edit-start-command-btn" class="text-yellow-500 hover:text-yellow-400 flex items-center space-x-1">
-                            <i class="fas fa-edit"></i>
-                            <span>Edit</span>
-                        </button>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Ethereum Sepolia RPC</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-ethereum-rpc"></div>
                     </div>
-                    <pre id="view-start-command" class="bg-gray-700 rounded-lg px-4 py-2 h-32 overflow-y-auto font-mono text-xs view-modal-content break-all"></pre>
-                    <!-- Editable Start Command (Hidden by Default) -->
-                    <div id="edit-start-command-section" class="hidden mt-2">
-                        <textarea id="edit-start-command" rows="6" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 font-mono text-xs text-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                        <div class="flex justify-end space-x-2 mt-2">
-                            <button id="save-start-command" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-lg flex items-center space-x-1">
-                                <i class="fas fa-save"></i>
-                                <span>Save</span>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Beacon Sepolia RPC</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-beacon-rpc"></div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Private Key (0x...)</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content relative">
+                            <span id="view-private-key" class="blur-sm"></span>
+                            <button type="button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white toggle-view-private-key">
+                                <i class="fas fa-eye"></i>
                             </button>
-                            <button id="cancel-edit-start-command" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-1 rounded-lg flex items-center space-x-1">
-                                <i class="fas fa-times"></i>
-                                <span>Cancel</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Wallet Address</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-wallet-address"></div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">VPS IP</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-vps-ip"></div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Proven Block Number</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-block-number"></div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Status</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 min-h-12 flex items-center font-mono text-sm view-modal-content break-all" id="view-status"></div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Base64 Proof String</label>
+                        <div class="bg-gray-700 rounded-lg px-4 py-3 h-32 overflow-y-auto font-mono text-sm view-modal-content break-all" id="view-proof-string"></div>
+                    </div>
+                    <!-- Start Command Section with Edit Option -->
+                    <div class="md:col-span-2">
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-sm font-medium text-gray-400">Start Command</label>
+                            <button id="edit-start-command-btn" class="text-yellow-500 hover:text-yellow-400 flex items-center space-x-1">
+                                <i class="fas fa-edit"></i>
+                                <span>Edit</span>
                             </button>
+                        </div>
+                        <pre id="view-start-command" class="bg-gray-700 rounded-lg px-4 py-3 h-32 overflow-y-auto font-mono text-sm view-modal-content break-all"></pre>
+                        <!-- Editable Start Command (Hidden by Default) -->
+                        <div id="edit-start-command-section" class="hidden mt-2">
+                            <textarea id="edit-start-command" rows="6" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 font-mono text-sm text-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            <div class="flex justify-end space-x-2 mt-2">
+                                <button id="save-start-command" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-lg flex items-center space-x-1">
+                                    <i class="fas fa-save"></i>
+                                    <span>Save</span>
+                                </button>
+                                <button id="cancel-edit-start-command" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-1 rounded-lg flex items-center space-x-1">
+                                    <i class="fas fa-times"></i>
+                                    <span>Cancel</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3 shrink-0">
-            <button id="copy-start-command" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2">
-                <i class="fas fa-copy"></i>
-                <span>Copy Start Command</span>
-            </button>
-            <button id="close-view-modal" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
-                Close
-            </button>
+            <div class="border-t border-gray-700 px-6 py-4 flex justify-end space-x-3 shrink-0">
+                <button id="copy-start-command" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2">
+                    <i class="fas fa-copy"></i>
+                    <span>Copy Start Command</span>
+                </button>
+                <button id="close-view-modal" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
+                    Close
+                </button>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Edit Node Modal -->
     <div id="edit-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
@@ -266,47 +267,47 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="edit-node-name" class="block text-sm font-medium text-gray-400 mb-2">Node Name</label>
-                        <input type="text" id="edit-node-name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        <input type="text" id="edit-node-name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
                     </div>
                     <div>
                         <label for="edit-ethereum-rpc" class="block text-sm font-medium text-gray-400 mb-2">Ethereum Sepolia RPC</label>
-                        <input type="text" id="edit-ethereum-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="edit-ethereum-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="edit-beacon-rpc" class="block text-sm font-medium text-gray-400 mb-2">Beacon Sepolia RPC</label>
-                        <input type="text" id="edit-beacon-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="edit-beacon-rpc" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="edit-private-key" class="block text-sm font-medium text-gray-400 mb-2">Private Key (0x...)</label>
                         <div class="relative">
-                            <input type="password" id="edit-private-key" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 blur-sm">
-                            <button type="button" class="absolute right-2 top-2 text-gray-400 hover:text-white" id="toggle-edit-private-key">
+                            <input type="password" id="edit-private-key" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 blur-sm">
+                            <button type="button" class="absolute right-2 top-3 text-gray-400 hover:text-white" id="toggle-edit-private-key">
                                 <i class="fas fa-eye"></i>
                             </button>
                         </div>
                     </div>
                     <div>
                         <label for="edit-wallet-address" class="block text-sm font-medium text-gray-400 mb-2">Wallet Address</label>
-                        <input type="text" id="edit-wallet-address" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="edit-wallet-address" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="edit-vps-ip" class="block text-sm font-medium text-gray-400 mb-2">VPS IP</label>
-                        <input type="text" id="edit-vps-ip" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="edit-vps-ip" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="edit-block-number" class="block text-sm font-medium text-gray-400 mb-2">Proven Block Number</label>
-                        <input type="text" id="edit-block-number" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <input type="text" id="edit-block-number" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     </div>
                     <div>
                         <label for="edit-status" class="block text-sm font-medium text-gray-400 mb-2">Status</label>
-                        <select id="edit-status" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <select id="edit-status" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                             <option value="active">Active</option>
                             <option value="inactive">Inactive</option>
                         </select>
                     </div>
                     <div class="md:col-span-2">
                         <label for="edit-proof-string" class="block text-sm font-medium text-gray-400 mb-2">Base64 Proof String</label>
-                        <textarea id="edit-proof-string" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        <textarea id="edit-proof-string" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                     </div>
                     <!-- Start Command Section with Edit Option -->
                     <div class="md:col-span-2">
@@ -317,10 +318,10 @@
                                 <span>Edit</span>
                             </button>
                         </div>
-                        <pre id="edit-start-command-display" class="bg-gray-700 rounded-lg px-4 py-2 font-mono text-sm max-h-40 overflow-y-auto break-all"></pre>
+                        <pre id="edit-start-command-display" class="bg-gray-700 rounded-lg px-4 py-3 font-mono text-sm max-h-40 overflow-y-auto break-all"></pre>
                         <!-- Editable Start Command (Hidden by Default) -->
                         <div id="edit-start-command-section-edit" class="hidden mt-2">
-                            <textarea id="edit-start-command-textarea" rows="6" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 font-mono text-sm text-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            <textarea id="edit-start-command-textarea" rows="6" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 font-mono text-sm text-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                             <div class="flex justify-end space-x-2 mt-2">
                                 <button type="button" id="save-start-command-edit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-lg flex items-center space-x-1">
                                     <i class="fas fa-save"></i>
