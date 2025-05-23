@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const loginError = document.getElementById('login-error');
     const loginSuccess = document.getElementById('login-success');
 
-    const BASE_URL = 'https://aztec-backend-production.up.railway.app'; // Replace with your Railway URL
+    const BASE_URL = 'http://34.44.154.88:3001';
 
     // Signup Form Submission
     if (signupForm) {
