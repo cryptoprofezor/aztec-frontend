@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentNodeId = null;
 
     // Base URL for the backend
-    const BASE_URL = 'https://aztec-backend-production.up.railway.app';
+   const BASE_URL = 'http://34.44.154.88:3001';
 
     // Initial load
     loadNodes();
